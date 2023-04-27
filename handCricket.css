@@ -1,0 +1,240 @@
+body{
+  background-color: #000000;
+  font-family: 'Montserrat';
+  font-size: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+div{
+  margin: 0px auto;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Chakra Petch';
+}
+
+li, p{
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+/* Align Items to Vertical center*/
+.image-container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Image Container*/
+.image-container{
+  background-image: url("images/background-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.8);
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+}
+
+.fluid-container{
+  position: absolute; /*Centered Overlap*/
+  padding: 20px;
+}
+
+.intro-box, .menu-box , .rules-box,
+.toss-box, .game-box, .message-box{
+  transition: opacity 0.5s ease-in-out;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  padding: 10px 10px 20px;
+  border-radius: 25px;
+}
+
+.heading-text{
+  font-size: 2.5rem;
+  color: #85CDFD;
+  margin: 10px;
+}
+
+.try-text, .button-text{
+  padding: 10px;
+  margin: 0px;
+}
+
+.try-text{
+  font-size: 2rem;
+}
+
+.intro-box, .menu-box{
+  border: solid #FFDD83 3px;
+  max-width: 300px;
+}
+
+.menu-box{
+  max-width: 400px;
+}
+
+.rules-box{
+  border: solid #14D40F 3px;
+  max-width: 650px;
+}
+
+.toss-box, .message-box{
+  border: solid #FFFFFF 3px;
+}
+
+.game-box{
+  border: solid #E9A178 3px;
+  padding: 10px;
+}
+
+.bat-btn, .bowl-btn{
+  background-color: transparent;
+  border: none;
+}
+
+.bat-btn:hover, bowl-btn:hover{
+  border: solid #B4A671 2px;
+  border-radius: 25%;
+}
+
+.game-container{
+  padding: 10px;
+}
+
+.game-text{
+  color: #39B5E0;
+  font-weight: 550;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.spacing{
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 175px;
+  margin: 10px;
+}
+
+.options-text{
+  text-align: center;
+  font-weight: bold;
+  color: #F7349F;
+  margin: 10px 0px;
+  font-size: 2rem;
+}
+
+.score-text{
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.pos-img{
+  border: dashed #FFFFFF 3px;
+  border-radius: 25px;
+  padding: 10px;
+  width: 150px;
+}
+
+.img-box{
+  background-color: transparent;
+  border: none;
+}
+
+.message{
+  font-size: 3rem;
+  padding: 10px;
+  margin: 0px;
+}
+
+.hand-img{
+  width: 75px;
+}
+
+.hand-img:hover{
+  border: solid #FFFFFF 2px;
+  border-radius: 10px;
+}
+
+.col{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 12px;
+}
+
+.footer-box{
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 25px 25px 0px 0px;
+  border-style: solid solid none;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  border-width: 3px;
+  padding: 10px;
+  bottom: 0px;
+}
+
+.hide {
+  display: none;
+}
+
+span{
+  font-size: 22px;
+}
+
+a{
+  text-decoration: none;
+  color: #14D40F;
+}
+
+a:hover{
+  color: #FFFFFF;
+}
+
+@media (max-width: 600px){
+  h2{
+    font-size: 1.25rem;
+  }
+  .options-text {
+    font-size: 1.5rem;
+  }
+  .score-text, h3, h4{
+    font-size: 1.05rem;
+  }
+  ol{
+    padding-left: 1rem;
+  }
+  p, li{
+    font-size: 1rem;
+  }
+  span{
+    font-size: 18px;
+  }
+  .game-text{
+    font-size: 2.5rem;
+  }
+  .intro-box, .fluid-container{
+    padding: 10px;
+  }
+  .spacing{
+    min-width: 140px;
+  }
+  .toss-img{
+    width: 100px;
+  }
+  .pos-img{
+    padding: 3px;
+    width: 100px;
+  }
+  .hand-img{
+    width: 50px;
+  }
+  .footer-box {
+    padding: 5px;
+  }
+  .col{
+    padding: 4px;
+  }
+}

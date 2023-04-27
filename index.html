@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Hari Vikinesh, Hari, Vikinesh, Hand Cricket, mini-game, design, web design challenge, fun game">
+  <meta name="description" content="Play hand cricket anywhere on any device.">
+  <meta name="author" content="Hari Vikinesh">
+  <title>Hand Cricket</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="handCricket.css">
+
+  <!-- Add custom Website Icon -->
+  <link rel="icon" href="images/icon.ico">
+
+  <!-- Adding Fonts from Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat&family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Adding Icons from fontAwesome -->
+  <script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"></script>
+
+  <section id="full-page">
+    <div class="image-container">
+      <div class="fluid-container">
+        <div class="intro-box hide">
+          <h1 class="heading-text">Hand Cricket</h1>
+          <div class="try-btn button btn btn-outline-danger"><h4 class="try-text">Give it a try?</h4></div>
+        </div>
+      </div>
+      <div class="fluid-container">
+        <div class="menu-box hide">
+          <h1 class="heading-text">Hand Cricket</h1>
+            <div class="spacing new-btn button btn btn-primary"><h4 class="button-text">New Game</h4></div>
+            <div class="spacing guide-btn button btn btn-warning"><h4 class="button-text">How to Play</h4></div>
+            <div class="spacing exit-btn button btn btn-danger"><h4 class="button-text">Exit Game</h4></div>
+        </div>
+      </div>
+      <div class="fluid-container">
+        <div class="rules-box hide">
+          <div class="rules">
+            <h2 class="heading-text">Rules</h2>
+            <ol>
+              <li>Click on the Start button.</li>
+              <li>Choose to Bat or Bowl.</li>
+              <li>To play a number, Press the number shown in the image or Click on the hand image.</li>
+              <li>After your play, the computer will play a number.</li>
+              <li>You have three wickets to score and to defend.</li>
+              <li>If the number played by the player and the computer is the same. Then, it is considered as a wicket.</li>
+              <li>After three wickets, based on the toss you will bat or bowl.</li>
+              <li>Finally, scores are compared to decide the winner.</li>
+            </ol>
+            <div class="back-btn btn button btn-outline-primary"><h4 class="button-text">Close</h4></div>
+          </div>
+        </div>
+      </div>
+      <div class="fluid-container">
+        <div class="toss-box hide">
+          <h2 class="heading-text">Bat or Bowl?</h2>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="button bat-btn to-bat"><img class="toss-img" src="images/bat.png" alt="cricket-bat"></button>
+            </div>
+            <div class="col">
+              <button type="button" class="button bowl-btn to-bowl"><img class="toss-img" src="images/ball.png" alt="cricket-ball"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="game-box hide">
+          <div><h1 class="game-text">Hand Cricket</h1></div>
+          <div class="row">
+            <div class="col"><img class="player pos-img" src="images/bat.png" alt="bat"></div>
+            <div class="col"><img class="computer pos-img" src="images/ball.png" alt="ball"></div>
+          </div>
+          <div class="row">
+            <h3 class="options-text status-card">Ready</h3>
+            <h4 class="score-text update-card">Score: 0/0</h4>
+          </div>
+          <div class="icon-table">
+            <div class="row">
+              <div class="col">
+                <div class="col">
+                  <div class="row"><button type="button" class="img-box"><img class="hand-img" src="images/1.png" alt="1"></button><span>1</span></div>
+                </div>
+                <div class="col">
+                  <div class="row"><button type="button" class="img-box"><img class="hand-img" src="images/2.png" alt="2"></button><span>2</span></div>
+                </div>
+                <div class="col">
+                  <div class="row"><button type="button" class="img-box"><img class="hand-img" src="images/3.png" alt="3"></button><span>3</span></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="col">
+                  <div class="row"><button type="button" class="img-box"><img class="hand-img" src="images/4.png" alt="4"></button><span>4</span></div>
+                </div>
+                <div class="col">
+                  <div class="row"><button type="button" class="img-box"><img class="hand-img" src="images/5.png" alt="5"></button><span>5</span></div>
+                </div>
+                <div class="col">
+                  <div class="row"><button type="button" class="img-box"><img class="hand-img" src="images/6.png" alt="6"></button><span>6</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-btn button btn btn-success"><h4 class="button-text">Main Menu</h4></div>
+        </div>
+      </div>
+      <div class="fluid-container">
+        <div class="message-box hide">
+          <h1 class="message">Wicket</h1>
+        </div>
+      </div>
+      <div class="footer-box hide">
+        <span>created by <a href="https://hari-vickey.github.io/hari-vickey/">Hari Vikinesh.</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Including jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="handCricket.js"></script>
+
+</body>
